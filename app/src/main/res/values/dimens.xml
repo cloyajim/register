@@ -5,4 +5,8 @@
     <dimen name="margin_min_size">8dp</dimen>
     <dimen name="margin_max_size">24dp</dimen>
     <dimen name="common_padding_min">8dp</dimen>
+    <dimen name="profile_corner_radius_large">128dp</dimen>
+    <dimen name="profile_image_size_small">96dp</dimen>
+    <dimen name="profile_image_size_medium">160dp</dimen>
+    <dimen name="profile_image_size_large">256dp</dimen>
 </resources>
