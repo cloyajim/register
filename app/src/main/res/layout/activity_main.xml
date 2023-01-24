@@ -162,14 +162,14 @@
                    android:layout_width="match_parent"
                    android:layout_height="wrap_content"
                    android:hint="@string/hint_description"
-                   android:inputType="textMultiLine"
+                   android:inputType="textMultiLine|textAutoCorrect"
                    android:gravity="top"
                    android:lines="@integer/size_line_normal"
                    android:maxLines="@integer/size_line_max"
                    android:minLines="@integer/size_line_min"
                    android:maxLength="@integer/description_max_lenght"
                    android:singleLine="true"
-                   android:scrollbars="vertical"/>
+                   android:scrollbars="vertical" />
 
            </com.google.android.material.textfield.TextInputLayout>
         </LinearLayout>
