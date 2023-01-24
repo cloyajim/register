@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="description_normal_lenght">20</integer>
+    <integer name="number_phone_max_lenght">10</integer>
+    <integer name="description_max_lenght">120</integer>
+    <integer name="description_normal_2_lenght">60</integer>
+    <integer name="size_line_normal">2</integer>
+    <integer name="size_line_max">4</integer>
+    <integer name="size_line_min">1</integer>
+</resources>
