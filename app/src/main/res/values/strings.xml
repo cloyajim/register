@@ -6,4 +6,5 @@
     <string name="hint_address">Dirección</string>
     <string name="hint_description">Comentarios</string>
     <string name="help_required">Obligatorio</string>
+    <string name="label_register">Registros</string>
 </resources>

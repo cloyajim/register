@@ -9,4 +9,8 @@
     <dimen name="profile_image_size_small">96dp</dimen>
     <dimen name="profile_image_size_medium">160dp</dimen>
     <dimen name="profile_image_size_large">256dp</dimen>
+    <dimen name="corner_radius_middle">4dp</dimen>
+    <dimen name="layout_large">100dp</dimen>
+    <dimen name="profile_text_size_large">16sp</dimen>
+    <dimen name="profile_text_middle">8sp</dimen>
 </resources>

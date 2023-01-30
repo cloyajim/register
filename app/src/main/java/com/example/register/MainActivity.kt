@@ -15,8 +15,11 @@ class MainActivity : AppCompatActivity() {
 
         database = DatabaseHelper(this)
 
-    }
+        //boton para agregar formulario a BD
+        binding.btnAdd.setOnClickListener{
 
+        }
+    }
 
 
 
