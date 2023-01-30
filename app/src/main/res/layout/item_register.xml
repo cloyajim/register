@@ -5,13 +5,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    app:cardElevation="@dimen/common_padding_default"
+    app:cardElevation="@dimen/margin_normal_size"
     android:layout_margin="@dimen/margin_min_size"
     android:animateLayoutChanges="true"
     app:cardCornerRadius="@dimen/corner_radius_middle"
-    android:elevation="@dimen/common_padding_default"
-    app:cardUseCompatPadding="true"
-    android:outlineSpotShadowColor="@color/black">
+    android:elevation="@dimen/margin_max_size"
+    app:cardUseCompatPadding="true">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/linearLayout"
