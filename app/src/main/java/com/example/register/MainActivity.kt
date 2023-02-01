@@ -54,6 +54,7 @@ class MainActivity : AppCompatActivity() {
         this.registerFinishAdapter.add(register)
     }
 
+    //menu
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.menu_main, menu)
         return super.onCreateOptionsMenu(menu)
@@ -66,6 +67,7 @@ class MainActivity : AppCompatActivity() {
         return super.onOptionsItemSelected(item)
     }
 
+    //mensaje
     private fun showMessage(msgRes:Int){
         Snackbar.make(binding.root,getString(msgRes),Snackbar.LENGTH_SHORT).show()
     }
