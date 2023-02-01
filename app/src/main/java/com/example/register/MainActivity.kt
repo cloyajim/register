@@ -1,7 +1,10 @@
 package com.example.register
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.register.databinding.ActivityMainBinding
 import com.google.android.material.snackbar.Snackbar
@@ -51,6 +54,17 @@ class MainActivity : AppCompatActivity() {
         this.registerFinishAdapter.add(register)
     }
 
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.menu_main, menu)
+        return super.onCreateOptionsMenu(menu)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        if (item.itemId == R.id.action_register) {
+            startActivity(Intent(this, RegisterActivity::class.java))
+        }
+        return super.onOptionsItemSelected(item)
+    }
 
     private fun showMessage(msgRes:Int){
         Snackbar.make(binding.root,getString(msgRes),Snackbar.LENGTH_SHORT).show()
