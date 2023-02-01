@@ -18,8 +18,6 @@ class MainActivity : AppCompatActivity() {
 
         database = DatabaseHelper(this)
 
-
-
         binding.btnAdd.setOnClickListener {
             if(binding.etName.text.toString().isNotBlank() ||
                 binding.etLastName.text.toString().isNotBlank() ||
