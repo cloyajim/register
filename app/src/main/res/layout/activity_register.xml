@@ -18,6 +18,7 @@
             android:textSize="@dimen/profile_text_size_large"/>
 
         <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvFinishCard"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             tools:listitem="@layout/item_register"/>

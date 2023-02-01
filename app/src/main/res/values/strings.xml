@@ -12,4 +12,7 @@
     <string name="label_phone">Teléfono</string>
     <string name="label_address">Dirección</string>
     <string name="label_description">Comentario</string>
+    <string name="validation_field_required">Campo requerido</string>
+    <string name="message_write_db_error">Error al modificar la BD</string>
+    <string name="message_write_db_success">Operación exitosa</string>
 </resources>

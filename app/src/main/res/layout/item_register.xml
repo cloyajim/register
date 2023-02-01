@@ -21,7 +21,7 @@
 
 
         <ImageView
-            android:id="@+id/icContact"
+            android:id="@+id/ivContact"
             android:layout_width="@dimen/margin_max_size"
             android:layout_height="@dimen/layout_large"
             android:layout_marginEnd="@dimen/margin_min_size"
