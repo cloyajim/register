@@ -3,18 +3,19 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+    android:layout_width="@dimen/large_card"
     android:layout_height="wrap_content"
     app:cardElevation="@dimen/margin_normal_size"
     android:layout_margin="@dimen/margin_min_size"
     android:animateLayoutChanges="true"
     app:cardCornerRadius="@dimen/corner_radius_middle"
-    android:elevation="@dimen/margin_max_size"
-    app:cardUseCompatPadding="true">
+    android:elevation="@dimen/margin_min_size"
+    app:cardUseCompatPadding="true"
+    android:layout_gravity="center_horizontal">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/linearLayout"
-        android:layout_width="match_parent"
+        android:layout_width="@dimen/large_card"
         android:layout_height="wrap_content"
         android:animateLayoutChanges="true"
         android:background="@color/gray_700">

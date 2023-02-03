@@ -13,4 +13,5 @@
     <dimen name="layout_large">100dp</dimen>
     <dimen name="profile_text_size_large">16sp</dimen>
     <dimen name="profile_text_middle">8sp</dimen>
+    <dimen name="large_card">300dp</dimen>
 </resources>

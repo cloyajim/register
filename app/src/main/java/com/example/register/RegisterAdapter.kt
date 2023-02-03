@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.register.databinding.ItemRegisterBinding
 
-class RegisterAdapter(var registerList: MutableList<Register>, private val listener: MainActivity):
+class RegisterAdapter(var registerList: MutableList<Register>, private val listener: RegisterActivity):
     RecyclerView.Adapter<RegisterAdapter.ViewHolder>() {
 
     lateinit var context:Context
