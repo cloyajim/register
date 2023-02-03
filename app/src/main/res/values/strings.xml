@@ -16,4 +16,7 @@
     <string name="message_write_db_error">Error al modificar la BD</string>
     <string name="message_write_db_success">Operación exitosa</string>
     <string name="registro_title">Registros</string>
+    <string name="dialog_title">¿Eliminar Registro?</string>
+    <string name="dialog_ok">Eliminar</string>
+    <string name="dialog_cancel">Cancelar</string>
 </resources>

@@ -5,11 +5,12 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import androidx.appcompat.app.AlertDialog
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.register.databinding.ActivityRegisterBinding
 import com.google.android.material.snackbar.Snackbar
 
-class RegisterActivity : AppCompatActivity() {
+class RegisterActivity : AppCompatActivity(), OnClickListener  {
 
     private lateinit var binding: ActivityRegisterBinding
     private lateinit var registerFinishAdapter: RegisterAdapter
@@ -47,6 +48,23 @@ class RegisterActivity : AppCompatActivity() {
         this.registerFinishAdapter.add(register)
     }
 
+
+
+    override fun onLongClick(register: Register, currentAdapter:RegisterAdapter) {
+        val builder = AlertDialog.Builder(this)
+            .setTitle(getString(R.string.dialog_title))
+            .setPositiveButton(getString(R.string.dialog_ok), { dialogInterface, i ->
+                if(database.deleteRegister(register)){
+                    currentAdapter.remove(register)
+                    showMessage(R.string.message_write_db_success)
+                }else{
+                    showMessage(R.string.message_write_db_error)
+                }
+            })
+            .setNegativeButton(getString(R.string.dialog_cancel), null)
+        builder.create().show()
+
+    }
 
     //menu
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {

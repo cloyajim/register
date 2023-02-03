@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.register.databinding.ItemRegisterBinding
 
-class RegisterAdapter(var registerList: MutableList<Register>, private val listener: RegisterActivity):
+class RegisterAdapter(var registerList: MutableList<Register>, private val listener: OnClickListener):
     RecyclerView.Adapter<RegisterAdapter.ViewHolder>() {
 
     lateinit var context:Context
@@ -21,6 +21,8 @@ class RegisterAdapter(var registerList: MutableList<Register>, private val liste
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val register = registerList.get(position)
+
+        holder.setListener(register)
 
         holder.binding.tvName.text = register.name
         holder.binding.tvLastName.text = register.lastName
@@ -45,13 +47,13 @@ class RegisterAdapter(var registerList: MutableList<Register>, private val liste
     inner class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         val binding = ItemRegisterBinding.bind(view)
 
-        /*fun setListener(register: Register){
+        fun setListener(register: Register){
 
             binding.root.setOnLongClickListener{
                 listener.onLongClick(register, this@RegisterAdapter)
                 true
             }
-        }*/
+        }
 
     }
 

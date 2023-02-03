@@ -24,7 +24,7 @@ class DatabaseHelper(context:Context): SQLiteOpenHelper(context, Constants.DATAB
 
     }
 
-    @SuppressLint("Range")
+    @SuppressLint("Range", "Recycle")
     fun getAllRegister(): MutableList<Register>{
         val registers:MutableList<Register> = mutableListOf()
 
@@ -64,7 +64,8 @@ class DatabaseHelper(context:Context): SQLiteOpenHelper(context, Constants.DATAB
         return resultId
     }
 
-    fun updateRegister(register: Register): Boolean{
+    //Falta implementar este metodo
+    /*fun updateRegister(register: Register): Boolean{
         val database = this.writableDatabase
         val contentValues = ContentValues().apply {
             put(Constants.PROPERTY_NAME, register.name)
@@ -80,7 +81,7 @@ class DatabaseHelper(context:Context): SQLiteOpenHelper(context, Constants.DATAB
             null)
 
         return result == Constants.TRUE
-    }
+    }*/
 
     fun deleteRegister(register: Register) : Boolean{
         val database = this.writableDatabase

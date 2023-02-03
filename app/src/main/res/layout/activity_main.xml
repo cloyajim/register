@@ -19,8 +19,8 @@
         android:layout_marginBottom="@dimen/margin_min_size">
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="@dimen/profile_image_size_medium"
-            android:layout_height="@dimen/profile_image_size_medium">
+            android:layout_width="@dimen/profile_image_size_small"
+            android:layout_height="@dimen/profile_image_size_small">
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
